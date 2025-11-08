@@ -69,7 +69,7 @@ The goal is to assist dental professionals by providing an intelligent screening
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/dental-caries-detection.git
+git clone https://github.com/vijaykakde/Dental_Caries.git
 cd dental-caries-detection 
 pip install -r requirements.txt
 python app.py
