@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dental Caries Detection</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <nav>
+    <div class="logo"><i class="fa-solid fa-tooth"></i> DentalAI</div>
+    <div class="nav-links">
+      <a href="/">Home</a>
+      <a href="/analysis">Analysis</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Dental Caries Detection</h1>
+      <p>Detect dental caries (cavities) in teeth using AI!</p>
+      <a class="btn" href="/analysis"><i class="fa-solid fa-magnifying-glass"></i> Try Now</a>
+    </div>
+    <div class="hero-img">
+      <img src="{{ url_for('static', filename='img/teeth-hero.png') }}" alt="Teeth AI" />
+    </div>
+  </header>
+
+  <section class="features">
+    <div class="feature-card">
+      <i class="fa-solid fa-brain"></i>
+      <h3>AI Powered</h3>
+      <p>State-of-the-art deep learning model for accurate caries detection.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-image"></i>
+      <h3>Easy Upload</h3>
+      <p>Upload your dental images securely and get instant results.</p>
+    </div>
+    <div class="feature-card">
+      <i class="fa-solid fa-shield-halved"></i>
+      <h3>Privacy First</h3>
+      <p>Your data is never stored. All analysis is performed securely.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 DentalAI. All rights reserved.</p>
+  </footer>
+</body>
+</html>

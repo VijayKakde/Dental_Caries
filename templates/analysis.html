@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Analyze Teeth</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/analysis">Analysis</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+  </nav>
+
+  <div class="upload-section">
+    <h2>Upload Image</h2>
+    <form id="uploadForm">
+      <input type="file" id="fileInput" accept="image/*" required>
+      <button class="btn" type="submit">Detect</button>
+    </form>
+    <div class="result" id="result"></div>
+    <img id="preview" src="" alt="Uploaded image" />
+  </div>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
